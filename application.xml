@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://ns.adobe.com/air/application/1.5">
+    <id>com.zacharydangercampbell.WatchZach</id>
+    <version>0.0</version>
+    <filename>WatchZach</filename>
+    <initialWindow>
+        <content>index.html</content>
+        <visible>true</visible>
+        <width>660</width>
+        <height>600</height>
+        <minSize>660 600</minSize>
+        <maxSize>640 640</maxSize>
+    </initialWindow>
+
+    <icon>
+    	<image16x16>icons/clem16.png</image16x16>
+    	<image32x32>icons/clem32.png</image32x32>
+    	<image48x48>icons/clem48.png</image48x48>
+    	<image128x128>icons/clem128.png</image128x128>
+    </icon>
+</application>

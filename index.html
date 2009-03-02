@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Watch Zach, you weirdo.</title>
+	<script type="text/javascript" src="AIRAliases.js"></script>
+	<script type="text/javascript" src="jquery-1.3.1.min.js"></script>
+	<script type="text/javascript">
+        function appLoad(){
+		setInterval(function() {
+			var d = new Date();
+			air.trace("reloading image @ " + d);
+			var $img = $(document.createElement("img"));
+			$img.attr('alt', 'zachary danger');
+			$img.attr('src', 'http://zacharydangercampbell.com/webcam.jpg' + "?i=" + d);
+			$("#img_holder").empty();
+			$img.appendTo($("#img_holder"));
+		}, 30000);
+        }
+	</script>
+	<style type="text/css">
+		body {
+			color: #DDD;
+			background-color: #000000;
+		}
+
+		h1 { padding-left: 10px; }
+
+		#img_holder {
+			text-align: center;
+		}
+	</style>
+</head>
+<body onLoad="appLoad()">
+	<h1>Watch Zach</h1>
+	<div id="img_holder">
+		<img src="http://zacharydangercampbell.com/webcam.jpg" alt="zachary danger" />
+	</div>
+</body>
+</html>
